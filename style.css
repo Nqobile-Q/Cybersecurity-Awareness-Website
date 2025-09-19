@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #00ffe7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: #00ffe7;
+  color: #111;
+  border-radius: 5px;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00ffe7;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.btn {
+  background: #00ffe7;
+  color: #111;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #111;
+}
+
+
+.page-header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #262626;
+}
+
+
+.list {
+  padding: 30px;
+}
+
+.list ul {
+  list-style: none;
+}
+
+.list li {
+  background: #1a1a1a;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+.resources ul {
+  list-style: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.resources li {
+  margin: 10px 0;
+}
+
+.resources a {
+  color: #00ffe7;
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: #111;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+
+.center-img {
+  display: block;
+  margin: 20px auto; 
+  max-width: 80%;    
+  height: auto;
+}
+
